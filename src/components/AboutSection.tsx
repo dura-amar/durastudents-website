@@ -22,7 +22,7 @@ export default function AboutSection() {
 
         <div className="fade-in">
           <img
-            src="https://example.com/about.jpg"
+            src="images/about-dss.JPG"
             alt="About DSS"
             className="rounded-xl shadow-lg"
           />

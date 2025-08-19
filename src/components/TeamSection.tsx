@@ -16,7 +16,7 @@ export default function TeamSection() {
           {members.map((m, i) => (
             <div key={i} className="p-6 rounded-xl border text-center">
               <img
-                src="https://dummyimage.com/160x160/ddd/888&text=Photo"
+                src="images/team_raj.JPG"
                 alt={m.name}
                 className="w-32 h-32 mx-auto rounded-full object-cover mb-3"
               />

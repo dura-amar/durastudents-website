@@ -20,12 +20,15 @@ export default function FAQSection() {
         <h2 className="text-3xl font-bold text-center mb-10">
           Frequently Asked Questions
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((f, i) => (
-            <div key={i} className="bg-white p-6 rounded-xl shadow">
-              <div className="font-semibold">{f.q}</div>
-              <p className="text-gray-600 mt-2">{f.a}</p>
-            </div>
+            <details
+              key={i}
+              className="bg-white p-6 rounded-xl shadow cursor-pointer"
+            >
+              <summary className="font-semibold text-lg">{f.q}</summary>
+              <p className="mt-2 text-gray-600">{f.a}</p>
+            </details>
           ))}
         </div>
       </div>
