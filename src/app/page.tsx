@@ -11,10 +11,12 @@ import PartnersSection from "@/components/PartnersSection";
 import ProgramsSection from "@/components/ProgramsSection";
 import ResourcesSection from "@/components/ResourcesSection";
 import TeamSection from "@/components/TeamSection";
+import TopBar from "@/components/TopBar";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
+      <TopBar />
       <Navbar />
       <HeroSection />
       <AboutSection />
