@@ -7,7 +7,7 @@ export default function FooterSection() {
         <div>
           <div className="flex items-center gap-3 mb-3">
             <img
-              src="https://example.com/logo.png"
+              src="/images/logo.jpg"
               className="h-10 w-10 rounded-full"
               alt="DSS Logo"
             />
@@ -81,7 +81,9 @@ export default function FooterSection() {
             © {new Date().getFullYear()} Dura Students Society. All rights
             reserved.
           </p>
-          <p className="text-gray-400">Designed & developed with ❤️</p>
+          <p className="text-gray-400">
+            Designed & developed with ❤️ at DuraGarage
+          </p>
         </div>
       </div>
     </footer>

@@ -1,16 +1,27 @@
+// src/components/PartnersSection.tsx
+"use client";
+
+// 1. Data
+const partners = [
+  { id: 1, name: "Partner 1", logo: "/images/partners/partner_1.jpg" },
+  { id: 2, name: "Partner 2", logo: "/images/partners/partner_2.jpg" },
+  { id: 3, name: "Partner 3", logo: "/images/partners/partner_3.jpg" },
+  { id: 4, name: "Partner 4", logo: "/images/partners/partner_4.jpg" },
+];
+
+// 2. Layout
 export default function PartnersSection() {
-  const partners = [1, 2, 3, 4, 5];
   return (
     <section id="partners" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl font-semibold mb-8">Partners & Supporters</h2>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 items-center">
-          {partners.map((n) => (
+      <div className="max-w-6xl mx-auto px-20 text-center">
+        <h2 className="text-2xl font-semibold mb-12">Partners & Supporters</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+          {partners.map((partner) => (
             <img
-              key={n}
-              src={`https://dummyimage.com/160x60/ededed/999&text=Partner+${n}`}
-              alt={`Partner ${n}`}
-              className="mx-auto opacity-80"
+              key={partner.id}
+              src={partner.logo}
+              alt={partner.name}
+              className="max-h-20 object-contain"
             />
           ))}
         </div>
